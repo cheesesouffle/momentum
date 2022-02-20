@@ -1,0 +1,122 @@
+@charset "utf-8";
+@import url(./reset.css);
+@font-face {
+    font-family: '국립박물관문화재단클래식B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body, input, input::placeholder, input[type=text]{font-family: '국립박물관문화재단클래식B'; color: wheat;}
+
+.container{
+    position: fixed; width: 100%; height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hidden{display: none;}
+.login{
+    display: flex; align-items: center;
+    position: relative;
+    width: 100%; height: 25%;
+}
+.login > form{
+    width: 100%; height: 50%;
+    text-align: center;
+}
+.login > form > input:first-child{
+    width: 50%; height: 90%;
+    background: none;
+    border-top: none; border-left: none; border-right: none; border-color: wheat; border-width: 5px;
+}
+.login > form > input:first-child::placeholder{
+    font-size: 40px; text-align: center;
+}
+.login > form > input:first-child[type=text]{
+    color: wheat; font-size: 40px; text-align: center;
+}
+.login > form > input:last-child{
+    width: 15%; height: 70%; margin-left: 40px;
+    background: none; border-color: wheat; border-width: 3px; border-radius: 71% 89% 52% 65%;
+    cursor: pointer;
+}
+.login > form > input:last-child[type=submit]{
+    letter-spacing: 5px;
+}
+.left{
+    position: absolute; left: 0; width: 50%; height: 100%;
+    cursor: default;
+    
+}
+.hello{
+    width: 100%;
+    font-size: 80px; text-align: center; text-shadow: 2px 2px 6px gray;
+    cursor: default;
+}
+.calendar{
+    height: 35%;
+}
+.today{
+    position: relative; top: 20%;
+    font-size: 40px; text-align: center;
+}
+.clock{
+    position: relative; top: 20%;
+    font-size: 110px; text-align: center;
+}
+.quote{
+    margin-top: 2%; height: 15%;
+    font-size: 20px;
+}
+.quote > p:first-child{
+    position: relative; left: 10%; right: 10%; width: 80%;
+}
+.quote > p:last-child{
+    position: relative; right: 5%; width: 95%;
+    text-align: right;
+}
+.weather{
+    display: flex; align-items: center;
+    height: 15%;
+}
+.weather > p{
+    width: 100%;
+    font-size: 30px; text-align: center;
+}
+.weather > span{
+    width: 100%;
+    font-size: 30px; text-align: center;
+}
+.right{
+    position: absolute; right: 0; width: 40%; height: 100%;
+}
+.toDoForm{
+    margin-top: 5%;
+    width: 100%; height: 10%;
+    text-align: center;
+}
+.toDoForm > input{
+    width: 95%; height: 95%;
+    font-size: 30px; text-align: center;
+    border-top: none; border-left: none; border-right: none; border-color: wheat; border-width: 3px;
+    background: none;
+}
+.toDoList{
+    height: 55%; margin-top: 5%; text-align: center;
+    cursor: default; overflow-y: scroll;
+}
+.toDoList::-webkit-scrollbar{
+    width: 10px;
+}
+.toDoList::-webkit-scrollbar-thumb{
+    height: 10%; background-color: wheat;
+    border-radius: 10px;
+}
+.toDoList li{
+    margin-top: 1%;
+    font-size: 25px;
+}
+.toDoList li button{
+    background: none; border: none;
+    cursor: pointer;
+}

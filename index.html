@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum Clone</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <form class="hidden" id="jsLoginForm">
+                <input required maxlength="15" type="text" placeholder="what is your name?" onfocus="this.placeholder=''" onblur="this.placeholder='what is your name?'">
+                <input type="submit" value="LOGIN">
+            </form>
+            <h1 class="hello hidden" id="jsHello"></h1>
+        </div>
+
+        <div class="left">
+            <div class="calendar" id="jsCalendar">
+                <p class="today" id="jsToday">0000-00-00 SUN</p>
+                <br>
+                <p class="clock" id="jsClock">00:00:00</p>
+            </div>
+            <hr>
+            <div class="quote" id="jsQuote">
+                <p></p>
+                <br>
+                <p></p>
+            </div>
+            <hr>
+            <div class="weather" id="jsWeather">
+                <p class="hidden">No weather</p>
+                <span class="hidden"></span>
+            </div>
+        </div>
+        
+        <div class="right">
+            <form class="toDoForm" id="jsToDoForm">
+                <input type="text" placeholder="Write a ToDo and Press Enter" required onfocus="this.placeholder=''" onblur="this.placeholder='Write a ToDo and Press Enter'">
+            </form>    
+            <ul class="toDoList" id="jsToDoList"></ul>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
